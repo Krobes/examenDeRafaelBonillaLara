@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  #container
+    h1='Vista del personaje'
+    .card(style='width: 13rem')
+        img.card-img-top(src=personaje[0].image alt='...')
+        .card-body
+            h5.card-title #{personaje[0].name}
+                h6.card-subtitle.mb-2.text-muted #{personaje[0].gender}
+                p.card-text
+                | #{personaje[0].created}
+                br
+                a.card-link(href='#') Card link
+                br
+                a.card-link(href='#') Another link

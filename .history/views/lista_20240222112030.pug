@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  #lista
+    h1='Lista Completa'
+    ul
+      each personaje in personajes
+        a.li(href="/personaje/" + #{personaje.id}) #{personaje.name}
+        br
+    

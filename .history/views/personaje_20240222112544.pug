@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  #container
+        each personaje in personajes
+            .card(style='width: 13rem')
+                img.card-img-top(src=personaje.image alt='...')
+                .card-body
+                    p
+                        strong Name: 
+                        =   personaje.name
+                    p
+                        strong Status: 
+                        =    personaje.status
+                    p
+                        strong Species: 
+                        =    personaje.species

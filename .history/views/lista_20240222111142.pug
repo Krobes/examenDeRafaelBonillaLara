@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  #lista
+    h1='Lista Completa'
+    ul
+      each personaje in personajes
+        li #{personaje.name}
+    
